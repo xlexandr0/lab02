@@ -3,6 +3,7 @@ from django.contrib import messages
 from .models import Task
 from .forms import TaskForm
 
+
 def task_list(request):
     tasks = Task.objects.all()
     status_filter = request.GET.get('status')
